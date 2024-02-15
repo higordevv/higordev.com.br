@@ -6,7 +6,7 @@ export const authOptions: AuthOptions = {
     providers: [
         GitHubProvider({
             profile(profile) {
-                if (profile.login !== "higordevv") {
+                if (profile.login !== env.USER_ROOT) {
                     throw new Error("Você não é administrador desta página!");
                 }
                 return {
