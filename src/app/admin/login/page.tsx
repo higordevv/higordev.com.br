@@ -4,10 +4,9 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons"
 import { signIn } from 'next-auth/react';
 import React from 'react'
 
-function PageLoginAdmin() {
+function Page() {
   const handleLogin = async () => {
     await signIn('github', {
-      redirect: true,
       callbackUrl: "/admin"
     })
 
@@ -28,4 +27,4 @@ function PageLoginAdmin() {
   )
 }
 
-export default PageLoginAdmin
+export default Page

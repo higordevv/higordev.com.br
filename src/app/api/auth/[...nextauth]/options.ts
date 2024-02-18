@@ -1,5 +1,5 @@
 import { AuthOptions } from "next-auth"
-import GitHubProvider from "next-auth/providers/github"
+import GitHubProvider, { GithubProfile } from "next-auth/providers/github"
 import { env } from "@root/env"
 
 export const authOptions: AuthOptions = {
@@ -20,12 +20,17 @@ export const authOptions: AuthOptions = {
     ],
 
     callbacks: {
-        async jwt({ token, user }) {
-            if (user) token.role = user.role;
-            return token;
+        async jwt({ token, user, profile }) {
+            if (user) {
+                token.role = user.role
+                token = profile as GithubProfile
+            };
+            return token
         },
         async session({ session, token }) {
-            if (session?.user) session.user.role = token.role;
+            if (session?.user) {
+                session.user.role = token.role
+            };
             return session;
         },
     },

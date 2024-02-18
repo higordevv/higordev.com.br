@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import { GithubProfile } from "next-auth/providers/github";
+import { DefaultJWT } from "next-auth/jwt"
 
 declare module "next-auth" {
     interface NextAuth {
@@ -8,16 +9,16 @@ declare module "next-auth" {
     interface Session {
         user: {
             role?: string;
-            
-        }& GithubProfile
+
+        }
     }
     interface User extends GithubProfile {
         role?: string;
-    } 
+    }
 }
 
 declare module "next-auth/jwt" {
-    interface JWT {
+    interface JWT extends GithubProfile {
         role?: string;
     }
 }
