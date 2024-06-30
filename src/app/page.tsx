@@ -18,7 +18,7 @@ export default function Home() {
             <span className="text-white/60">Um programador FullStack do Ceará, Brasil.</span>
           </h1>
           <p className="text-white/70 text-lg text-wrap ">
-            Estudo programação há 4 anos, com foco em Javascript/Typescript. Desenvolvo interfaces com React e Next, usando boas praticas de clean code e arquitetura limpa. Trabalho como freelancer fullstack em uma startup e contribuo voluntariamente no Aricode Lab. Busco crescer como programador fullstack.
+            Estudo programação há 4 anos, com foco em Javascript/Typescript. Desenvolvo interfaces com React e Next, usando boas práticas de clean code e arquitetura limpa. Trabalho como freelancer fullstack em uma startup e contribuo voluntariamente no Aricode Lab. Busco crescer como programador fullstack.
           </p>
         </section>
         {/* Projetos */}
