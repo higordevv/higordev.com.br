@@ -1,0 +1,10 @@
+# Permitir todos os bots acessarem o site
+User-agent: *
+Allow: /
+
+# Bloquear diretórios sensíveis (se existirem)
+Disallow: /admin/
+Disallow: /login/
+
+# Localização do sitemap
+Sitemap: https://www.higordevv.vercel.app/sitemap.xml
