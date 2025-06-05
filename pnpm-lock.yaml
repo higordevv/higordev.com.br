@@ -11,15 +11,12 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.1.8
         version: 4.1.8(vite@6.3.5(jiti@2.4.2)(lightningcss@1.30.1))
-<<<<<<< HEAD
       framer-motion:
         specifier: ^12.16.0
         version: 12.16.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       lucide-react:
         specifier: ^0.513.0
         version: 0.513.0(react@19.1.0)
-=======
->>>>>>> fab8d1e (setup: estrutura inicial com SEO, Tailwind e documentação)
       react:
         specifier: ^19.1.0
         version: 19.1.0
