@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function Main() {
+export function Main() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-white bg-gradient-to-b from-[#0f172a] to-[#1e293b] overflow-hidden px-4">
       
@@ -15,19 +15,7 @@ function Main() {
         </h2>
       </div>
 
-      <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="z-10 mt-8"
-      >
-        <img
-          src="/assets/higordevv.jpg"
-          alt="Developer"
-          className="w-48 h-48 md:w-52 md:h-52 object-cover rounded-sm border-1 border-white shadow-2xl"
-        />
-      </motion.div>
-
+    
       <motion.a
         href="#projects"
         whileHover={{ scale: 1.05 }}
@@ -43,4 +31,3 @@ function Main() {
 }
 
 
-export { Main };

@@ -1,17 +1,14 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-function Nabar() {
+
+export function Nabar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="w-full bg-white/5 backdrop-blur-md shadow-md fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0 bg-[#1a1d23] bg-opacity-70 px-4 py-2 rounded-sm">
-            <h1 className="text-2xl font-extrabold font-sans text-white">
-              HigorDev
-            </h1>
-          </div>
+          <h3 className="text-xl font-bold text-[#ccff00]">Higor Dev</h3>
 
           <div className="hidden md:flex items-center gap-6 text-white">
             <a href="#about-me" className="hover:underline">
@@ -19,9 +16,6 @@ function Nabar() {
             </a>
             <a href="#projects" className="hover:underline">
               Projects
-            </a>
-            <a href="#skils" className="hover:underline">
-              Skills
             </a>
             <a
               href="#contact"
@@ -78,5 +72,3 @@ function Nabar() {
     </section>
   );
 }
-
-export { Nabar };
